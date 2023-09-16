@@ -713,25 +713,30 @@
     <!-- Modal window for mobile menu -->
 
     <div class="modal-window-mobile-menu">
-      <form class="form-mobile-menu">
+      <div class="form-mobile-menu">
         <button class="button-close menu-button" type="button">
           <svg class="button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <ul class="modal-menu">
-          <li class="modal-header-link-item">
-            <a class="modal-header-link modal-current-page" href="./index.html"
-              >Studio</a
-            >
-          </li>
-          <li class="modal-header-link-item">
-            <a class="modal-header-link" href="">Portfolio</a>
-          </li>
-          <li class="modal-header-link-item">
-            <a class="modal-header-link" href="">Contacts</a>
-          </li>
-        </ul>
+        <div>
+          <ul class="modal-menu">
+            <li class="modal-header-link-item">
+              <a
+                class="modal-header-link modal-current-page"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="modal-header-link-item">
+              <a class="modal-header-link" href="">Portfolio</a>
+            </li>
+            <li class="modal-header-link-item">
+              <a class="modal-header-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
         <div class="menu-contacts">
           <address class="modal-contacts">
             <ul class="modal-header-contact-list">
@@ -798,7 +803,7 @@
             </ul>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   </body>
 </html>
