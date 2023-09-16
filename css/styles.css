@@ -1,44 +1,5 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #fff;
-  color: #434455;
-  width: auto;
-}
-
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-img {
-  display: block;
-}
-
-button {
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-}
-
 .container {
-  max-width: 320px;
+  width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -165,13 +126,6 @@ button {
 
 .contacts-link {
   color: #434455;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  color: #404bbf;
 }
 
 /* Main content */
@@ -186,7 +140,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/people-office.jpg');
+    url('../images/people-office@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -199,7 +153,7 @@ button {
   color: #ffffff;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   margin-left: auto;
@@ -232,19 +186,6 @@ button {
 
 /* Section 2 Benefits  */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .benefits-icon-conteiner {
   display: none;
   align-items: center;
@@ -259,10 +200,10 @@ button {
 
 .benefits-list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 72px;
+  column-gap: 24px;
+  row-gap: 72px;
 }
 
 .benefits-item {
@@ -347,12 +288,6 @@ button {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: #404bbf;
 }
 
 .social-icon {
@@ -378,7 +313,26 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-portfolio-content {
+  padding: 32px 16px 32px 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+.projects-list .projects-names {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.projects-list .projects-tipes {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .img-box {
@@ -404,32 +358,6 @@ button {
 
 .card-portfolio:hover .overlay {
   transform: translateY(0);
-}
-
-.card-portfolio:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.card-portfolio-content {
-  padding: 32px 16px 32px 16px;
-  border-right: 1px solid var(--cornflower, #e7e9fc);
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
-  border-left: 1px solid var(--cornflower, #e7e9fc);
-}
-
-.projects-list .projects-names {
-  color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-.projects-list .projects-tipes {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /* Footer */
@@ -473,6 +401,11 @@ button {
   max-width: 100%;
 }
 
+.container-social-media {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-social-media {
   display: flex;
   flex-direction: column;
@@ -493,11 +426,6 @@ button {
 .footer-social-links-list {
   display: flex;
   column-gap: 16px;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  background-color: #31d0aa;
 }
 
 .subscribe {
@@ -549,16 +477,10 @@ button {
   letter-spacing: 0.04em;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: auto;
   margin-left: auto;
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-  color: #fff;
-  background-color: #404bbf;
-}
 .icon-subscribe {
   fill: #ffffff;
   margin-left: 16px;
@@ -581,7 +503,7 @@ button {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-backdrop.is-open {
+.is-open {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
@@ -589,8 +511,8 @@ button {
 
 .modal-window {
   position: absolute;
-  width: 408px;
-  min-height: 584px;
+  width: calc(100% - 30px);
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -723,6 +645,8 @@ button {
 }
 
 .form-checkbox {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
@@ -745,6 +669,7 @@ button {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  flex-shrink: 0;
   border-radius: 2px;
   display: inline-flex;
   align-items: center;
@@ -775,7 +700,9 @@ button {
   width: 100%;
   height: 100%;
   z-index: 999998;
-  background-color: rgba(46, 47, 66, 0.4);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -783,7 +710,7 @@ button {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window-mobile-menu.is-open {
+.is-open {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
@@ -791,12 +718,15 @@ button {
 
 .form-mobile-menu {
   position: absolute;
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 30px);
+  max-width: 288px;
   height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fcfcfc;
+  background-color: #fff;
   padding: 72px 16px 40px 16px;
 }
 
@@ -804,17 +734,11 @@ button {
   background-color: transparent;
 }
 
-.modal-menu-container {
-}
-
 .modal-menu {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
   margin-bottom: 168px;
-}
-
-.modal-header-link-item {
 }
 
 .modal-header-link {
@@ -830,7 +754,8 @@ button {
   color: #404bbf;
 }
 
-.modal-contacts {
+.menu-contacts {
+  margin-top: auto;
 }
 
 .modal-header-contact-list {
@@ -858,5 +783,241 @@ button {
   column-gap: 40px;
 }
 
-.modal-social-link {
+/* MIN WIDTH 768px */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .modal-window-mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-button-container {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .contacts {
+    display: flex;
+    font-style: normal;
+  }
+
+  .header-contact-list {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .header-page-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-image {
+    max-width: 1440px;
+  }
+
+  .hero-image-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
+  .benefits-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .benefits-title {
+    text-align: left;
+  }
+
+  .personnel-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .card-portfolio {
+    max-width: 360px;
+    min-width: 356px;
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  .footer-page .container {
+    padding-left: 120px;
+  }
+
+  .container-social-media {
+    flex-direction: row;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-social-media {
+    margin-left: 24px;
+  }
+  .footer-logo,
+  .footer-title {
+    text-align: start;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .form-mail {
+    max-width: 264px;
+    min-width: 264px;
+  }
+
+  .subscribe-button {
+    margin-left: 0;
+  }
+
+  .modal-window {
+    width: 408px;
+    height: 584px;
+  }
+}
+
+/* MIN-WIDTH 1158px */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .header-contact-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: #404bbf;
+  }
+
+  .hero-image {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .benefits-icon-conteiner {
+    display: flex;
+  }
+
+  .benefits-item {
+    min-width: auto;
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .benefits-list {
+    flex-wrap: nowrap;
+  }
+
+  .benefits-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .benefits-text {
+    font-weight: 500;
+  }
+
+  .personnel-list {
+    flex-wrap: nowrap;
+  }
+
+  .social-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-link:hover,
+  .social-link:focus {
+    background-color: #404bbf;
+  }
+
+  .card-portfolio {
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-portfolio:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+
+  .footer-page .container {
+    flex-direction: row;
+    column-gap: 80px;
+    padding: 0 16px;
+  }
+
+  .footer-social-media {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-link:hover,
+  .footer-link:focus {
+    background-color: #31d0aa;
+  }
+
+  .footer-logo-box {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .subscribe-button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .subscribe-button:hover,
+  .subscribe-button:focus {
+    color: #fff;
+    background-color: #404bbf;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office@2x.jpg');
+  }
 }
